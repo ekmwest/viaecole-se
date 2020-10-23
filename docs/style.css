@@ -17,18 +17,18 @@ body {
 }
 
 .app-links {
-    padding: 64px 0;
+    padding: 64px 0 0;
+    max-width: 480px;
+    margin: 0 auto;
 }
 
 .app-link {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     background-color: #fff;
     border-radius: 10px;
-    max-width: 320px;
     margin: 16px auto;
     padding: 16px;
-    font-weight: 600;
     text-decoration: none;
     color: #333;
     transition: box-shadow .4s;
@@ -39,14 +39,25 @@ body {
 }
 
 .app-link img {
-    width: 32px;
+    width: 48px;
     margin-right: 16px;
+}
+
+.app-link__name {
+    margin: 4px 0 4px;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.app-link__description {
+    margin: 0;
+    /* font-style: italic; */
 }
 
 .footer {
     border-top: 1px solid #ccc;
     text-align: center;
-    font-size: 13px;
+    font-size: 15px;
     color: #666;
     max-width: 640px;
     margin: 78px auto 32px;
